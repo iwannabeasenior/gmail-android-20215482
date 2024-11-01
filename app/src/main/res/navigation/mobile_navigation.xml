@@ -9,7 +9,14 @@
         android:id="@+id/navigation_home"
         android:label="@string/title_home"
         android:name="com.example.currency_calculator.ui.home.HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_assignment"
+            app:destination="@id/navigation_assignment" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_assignment3"
+            app:destination="@id/navigation_assignment3" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +29,16 @@
         android:label="@string/title_notifications"
         android:name="com.example.currency_calculator.ui.notifications.NotificationsFragment"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_assignment"
+        android:label="@string/title_notifications"
+        android:name="com.example.currency_calculator.assignment_29_10.Fragment1"
+        tools:layout="@layout/assignment_29_10_1" />
+    <fragment
+        android:id="@+id/navigation_assignment3"
+        android:label="@string/title_notifications"
+        android:name="com.example.currency_calculator.assignment_29_10.Fragment3"
+        tools:layout="@layout/assignment_29_10_3" />
+
 </navigation>
